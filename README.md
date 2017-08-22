@@ -38,7 +38,7 @@ A sample redis java client.
 	</property>
 </bean>
 <!-- 配置Redis客户端 -->
-<bean id="redisClient" class="com.cuckoo.redis.client.impl.JedisRedisClient" init-method="initJedisPool" destroy-method="closeJedisPool">
+<bean id="redisClient" class="org.cuckoo.redis.client.impl.JedisRedisClient" init-method="initJedisPool" destroy-method="closeJedisPool">
 	<property name="redis.host" value="${redis.host}"/>
 	<property name="redis.port" value="${redis.port}"/>
 	<property name="redis.password" value="${redis.password}"/>
